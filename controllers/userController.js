@@ -14,6 +14,7 @@ const sendToken = require("../utils/sendToken");
 //   });
 // });
 
+// user signin
 const client = new OAuth2Client("");
 exports.userSignin = catchAsyncErrors(async (req, res, next) => {
   const { imageURL, token } = req.body;
@@ -44,4 +45,17 @@ exports.userSignin = catchAsyncErrors(async (req, res, next) => {
         sendToken(user, 200, res);
       }
     });
+});
+
+// logout user
+exports.logoutUser = catchAsyncErrors((req, res, next) => {
+  res.cookie("token", null, {
+    expires: new Date(Date.now()),
+    httpOnly: true,
+  });
+
+  res.status(200).json({
+    sucess: true,
+    message: "Logged out",
+  });
 });
