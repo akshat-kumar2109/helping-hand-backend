@@ -4,18 +4,10 @@ const ErrorHandler = require("../utils/errorHandler");
 const { OAuth2Client } = require("google-auth-library");
 const sendToken = require("../utils/sendToken");
 
-// Get user details
-// exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
-//   const user = await User.findById(req.user.id);
-
-//   res.status(200).json({
-//     sucess: true,
-//     user,
-//   });
-// });
-
 // user signin
-const client = new OAuth2Client("");
+const client = new OAuth2Client(
+  "117892246895-b6feu5jo8h9a3fcfkdac19revffmo330.apps.googleusercontent.com"
+);
 exports.userSignin = catchAsyncErrors(async (req, res, next) => {
   const { imageURL, token } = req.body;
 
