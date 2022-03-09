@@ -18,10 +18,6 @@ const foodSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter food type"],
   },
-  age: {
-    type: Number,
-    required: [true, "Please enter food age"],
-  },
   location: {
     type: String,
     required: [true, "Please enter your location"],
