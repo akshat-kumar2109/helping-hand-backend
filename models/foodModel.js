@@ -10,18 +10,10 @@ const foodSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter food description"],
   },
-  images: [
-    {
-      public_id: {
-        type: String,
-        required: true,
-      },
-      url: {
-        type: String,
-        required: true,
-      },
-    },
-  ],
+  images: {
+    type: String,
+    required: true,
+  },
   type: {
     type: String,
     required: [true, "Please enter food type"],
