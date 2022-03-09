@@ -4,7 +4,7 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 
 // create food
 exports.createFood = catchAsyncErrors(async (req, res, next) => {
-  const { name, description, images, type, age, location } = req.body;
+  const { name, description, images, type, age, location, id } = req.body;
 
   const food = await Food.create({
     name,
@@ -13,7 +13,7 @@ exports.createFood = catchAsyncErrors(async (req, res, next) => {
     type,
     age,
     location,
-    user: req.user._id,
+    user: id,
   });
 
   res.status(201).json({
