@@ -41,5 +41,8 @@ exports.getUserFood = catchAsyncErrors(async (req, res, next) => {
 
   const userFood = await Food.find({ user });
 
-  console.log(userFood);
+  res.status(200).json({
+    success: true,
+    userFood,
+  });
 });
