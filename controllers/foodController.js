@@ -1,7 +1,7 @@
 const Food = require("../models/foodModel");
 const ErrorHandler = require("../utils/errorHandler");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
-const multer = require("multer");
+// const multer = require("multer");
 
 // create food
 exports.createFood = catchAsyncErrors(async (req, res, next) => {
