@@ -1,4 +1,5 @@
 const Food = require("../models/foodModel");
+const User = require("../models/userModel");
 const ErrorHandler = require("../utils/errorHandler");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 // const multer = require("multer");
@@ -30,4 +31,15 @@ exports.getAllFoods = catchAsyncErrors(async (req, res, next) => {
     sucess: true,
     foods,
   });
+});
+
+// get food of user
+exports.getUserFood = catchAsyncErrors(async (req, res, next) => {
+  const id = req.params.id;
+
+  const user = await User.findById(id);
+
+  const userFood = await Food.find({ user });
+
+  console.log(userFood);
 });
