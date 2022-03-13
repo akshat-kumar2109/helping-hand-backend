@@ -46,3 +46,13 @@ exports.getUserFood = catchAsyncErrors(async (req, res, next) => {
     userFood,
   });
 });
+
+exports.deleteFood = catchAsyncErrors(async (req, res, next) => {
+  const id = req.params.id;
+
+  await Food.findByIdAndDelete(id);
+
+  res.status(200).json({
+    success: true,
+  });
+});

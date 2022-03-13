@@ -3,6 +3,7 @@ const {
   getAllFoods,
   createFood,
   getUserFood,
+  deleteFood,
 } = require("../controllers/foodController");
 const multer = require("multer");
 
@@ -41,6 +42,6 @@ router.route("/foods").get(getAllFoods);
 
 router.route("/food/new").post(upload.single("images"), createFood);
 
-router.route("/food/:id").get(getUserFood);
+router.route("/food/:id").get(getUserFood).delete(deleteFood);
 
 module.exports = router;
