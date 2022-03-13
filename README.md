@@ -74,9 +74,9 @@ THis project 'Helping Hand' provide a solution which will help in solve these tw
 ## Installing Back-end of the Project
 ### Clone the repo
 ```
-git clone https://github.com/abhishekpawan/helping-hand
+git clone https://github.com/akshat-kumar2109/helping-hand-backend
 ```
-### [](https://github.com/abhishekpawan/weather-forecast-web-app#to-install-all-the-dependencies)To Install all the dependencies
+### To Install all the dependencies
 
 ```
 npm install
@@ -85,7 +85,7 @@ npm install
 
 You should also have `MongoDB` setup on your pc
 
-For this, visit mongodb site: https://www.mongodb.com/try/download/community), download it and setup the database server
+For this, visit mongodb site: https://www.mongodb.com/try/download/community, download it and setup the database server
 
 You can also install `MongoDB Compass`for viewing the database in `GUI`
 
