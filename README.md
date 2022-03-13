@@ -150,7 +150,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ##### LinkedIn: [Akshat Kumar](https://www.linkedin.com/in/akshat-kumar-b8aa37193/)
 
-##### Twitter: [@akshatkumar1999](https://www.linkedin.com/in/akshat-kumar-b8aa37193/)
+##### Twitter: [@akshatkumar1999](https://twitter.com/akshatkumar1999?t=nGB-er4_s7eR1GAV_NdtVg&s=09)
 
 ##### Mail: akshatkumar1101@gmail.com
 
